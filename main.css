@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.front-page-space {
+  width: 100%;
+  aspect-ratio: 1250/625;
+}
