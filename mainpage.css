@@ -1,0 +1,30 @@
+:root {
+  --main-header-aspect-ratio: calc(1000 / 562);
+  --base-width: 1200px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-header > img {
+  width: var(--base-width);
+  aspect-ratio: var(--main-header-aspect-ratio);
+}
+
+.main-content {
+  position: absolute;
+  top: calc(var(--base-width) / var(--main-header-aspect-ratio));
+  width: var(--base-width);
+  height: 10000px;
+  background-color: white;
+}
+
+@media (max-width: 1200px) {
+  .main-header > img {
+    position: absolute;
+    width: 100vw;
+    min-width: 400px;
+  }
+}
